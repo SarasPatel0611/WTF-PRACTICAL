@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Secure Bank Ltd - Online Banking Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Secure Bank Ltd.</h1>
+<p style="text-align:center;">Online Banking Portal - Basic Financial Calculators</p>
+<hr>
+
+
+<div class="box">
+<h2>1. Loan Eligibility Checker</h2>
+<label>Monthly Income (Rs):</label>
+<input type="number" id="income"><br><br>
+
+<label>Age:</label>
+<input type="number" id="age"><br><br>
+
+<label>Existing Monthly EMI (Rs):</label>
+<input type="number" id="existingEmi"><br><br>
+
+<button onclick="checkLoanEligibility()">Check Eligibility</button>
+<p id="loanResult" class="result"></p>
+</div>
+
+
+<div class="box">
+<h2>2. EMI Calculator</h2>
+<label>Loan Amount (Rs):</label>
+<input type="number" id="principal"><br><br>
+
+<label>Annual Interest Rate (%):</label>
+<input type="number" id="rate"><br><br>
+
+<label>Tenure (in Years):</label>
+<input type="number" id="tenure"><br><br>
+
+<button onclick="calculateEMI()">Calculate EMI</button>
+<p id="emiResult" class="result"></p>
+</div>
+
+
+<div class="box">
+<h2>3. Interest Calculator</h2>
+<label>Principal (Rs):</label>
+<input type="number" id="p2"><br><br>
+
+<label>Rate (%):</label>
+<input type="number" id="r2"><br><br>
+
+<label>Time (Years):</label>
+<input type="number" id="t2"><br><br>
+
+<label>Interest Type:</label>
+<select id="interestType">
+  <option value="simple">Simple Interest</option>
+  <option value="compound">Compound Interest</option>
+</select><br><br>
+
+<button onclick="calculateInterest()">Calculate Interest</button>
+<p id="interestResult" class="result"></p>
+</div>
+
+
+<div class="box">
+<h2>4. Year-wise Compound Interest Table</h2>
+<label>Principal (Rs):</label>
+<input type="number" id="p3"><br><br>
+
+<label>Rate (%):</label>
+<input type="number" id="r3"><br><br>
+
+<label>Number of Years:</label>
+<input type="number" id="years3"><br><br>
+
+<button onclick="generateInterestTable()">Generate Table</button>
+<div id="tableResult"></div>
+</div>
+
+
+<div class="box">
+<h2>5. Account Type Checker</h2>
+<label>Enter Account Type Code (1-Savings, 2-Current, 3-Salary):</label>
+<input type="number" id="acType"><br><br>
+
+<button onclick="checkAccountType()">Check</button>
+<p id="acResult" class="result"></p>
+</div>
+
+
+<div class="box">
+<h2>6. Savings Goal Calculator</h2>
+<label>Monthly Deposit (Rs):</label>
+<input type="number" id="monthlyDeposit"><br><br>
+
+<label>Target Amount (Rs):</label>
+<input type="number" id="targetAmount"><br><br>
+
+<button onclick="calculateSavingsGoal()">Calculate Months Needed</button>
+<p id="savingsResult" class="result"></p>
+</div>
+
+<div class="box">
+<h2>7. Variable Scope Demo (var, let, const)</h2>
+<button onclick="scopeDemo()">Run Scope Demo</button>
+<p id="scopeResult" class="result"></p>
+</div>
+
+<hr>
+<p style="text-align:center;">Secure Bank Ltd. - Mini Project by Dharmi</p>
+
+<script src="script.js"></script>
+</body>
+</html>
